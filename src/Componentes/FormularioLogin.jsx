@@ -1,41 +1,53 @@
-import { Button, TextField } from '@mui/material'
+import { Button } from '@mui/material'
 import React, { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
+import LoginForm from "../Styled-Components/LoginForm"
+import LoginTextField from "../Styled-Components/LoginTextField"
 const FormularioLogin = () => {
-    const [usuario, setUsuario] = useState("")
-    const [senha, setSenha] = useState("")
+    let navigate = useNavigate();
+    const [form, setForm] = useState({usuario: "", senha: ""})
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        if(form.usuario === "admin" && form.senha === "admin") {
+            console.log("true")
+            return navigate('/dashboard')
+        }
+    }
 
     function handleChange(event) {
         const {name, value} = event.target
         switch(name) {
             case 'usuario': {
-                setUsuario(value)
+                setForm({...form, [name]:value})
                 break;
             }
             case 'senha': {
-                setSenha(value);
+                setForm({...form, [name]:value})
                 break;
             }
+            default: { break;}
         }
         
     }
 
     return (
-        <form>
-            <TextField
-            value={usuario}
+        <LoginForm onSubmit={handleSubmit}>
+            <h1>Login</h1>
+            <LoginTextField
+            value={form.usuario}
             name="usuario"
             type="text"
             onChange={handleChange}
             />    
-            <TextField
-            value={senha}
+            <LoginTextField
+            value={form.senha}
             name="senha"
-            type="password"
+            type="text"
             onChange={handleChange}
             />
-            <Button variant='contained'>Enviar</Button>
-        </form>
+            <Button variant='contained' type="submit">Enviar</Button>
+        </LoginForm>
     )
 }
 
