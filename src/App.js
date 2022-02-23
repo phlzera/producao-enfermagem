@@ -7,6 +7,7 @@ function App() {
     <BrowserRouter>
       <GlobalStyle/>
       <Routes>
+        <Route path='/' element={<TelaLogin/>}/>
         <Route path='/login' element={<TelaLogin/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
       </Routes>

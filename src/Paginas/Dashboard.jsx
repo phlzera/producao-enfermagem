@@ -1,8 +1,13 @@
 import React from 'react'
-
+import ListaDePacientes from '../Componentes/ListaDePacientes'
+import FormularioDeEvolucao from '../Componentes/FormularioDeEvolucao'
 const Dashboard = () => {
     return (
-        <h1>dashboard</h1>
+        <>
+        <ListaDePacientes/>
+        <FormularioDeEvolucao/>
+        </>
+        
     )
 }
 
