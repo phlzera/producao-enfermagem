@@ -1,13 +1,11 @@
 import React from 'react'
-import ListaDePacientes from '../Componentes/ListaDePacientes'
-import FormularioDeEvolucao from '../Componentes/FormularioDeEvolucao'
+import BotoesDashboard from '../Componentes/BotoesDashboard';
+import DivDashboard from '../Styled-Components/DivDashboard';
 const Dashboard = () => {
     return (
-        <>
-        <ListaDePacientes/>
-        <FormularioDeEvolucao/>
-        </>
-        
+        <DivDashboard>
+            <BotoesDashboard/>
+        </DivDashboard>
     )
 }
 
