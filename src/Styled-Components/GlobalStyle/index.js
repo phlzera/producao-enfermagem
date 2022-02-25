@@ -2,10 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     body {
-        background-color: #040f16;
+        background-color: #fbfbff;
     }
 
     h2 {
+        color: #FBFBFF
+    }
+
+    ::placeholder {
         color: #FBFBFF
     }
 `
