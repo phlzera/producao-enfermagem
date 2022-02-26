@@ -6,13 +6,13 @@ const iconePacientes = require('../icons/medical-history.png')
 const BotoesDashboard = () => {
     return (
         <>
-            <Link to={'/pacientes'}>
-                <CardDashBoard>
+            <Link to={'/pacientes'} style={{textDecoration: 'none'}}>
+                <CardDashBoard >
                     <DashBoardIcons src={iconePacientes} alt='Prancheta'/>
                     <h2>Controle de Pacientes</h2>
                 </CardDashBoard>
             </Link>
-            <Link to={'/funcionarios'}>
+            <Link to={'/funcionarios'} style={{textDecoration: 'none'}}>
                 <CardDashBoard>
                     <DashBoardIcons src={iconePacientes} alt='Prancheta'/>
                     <h2>Controle de Funcionarios</h2>

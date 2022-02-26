@@ -1,12 +1,13 @@
 import FormularioDeEvolucao from '../Componentes/FormularioDeEvolucao'
-import ListaDePacientes from '../Componentes/ListaDePacientes'
+import SideBarPacientes from '../Componentes/SideBarPacientes'
+import DivControleDePacientes from '../Styled-Components/DivControleDePacientes'
 
 const ControleDePaciente = () => {
     return (
-        <>
-        <ListaDePacientes/>
-        <FormularioDeEvolucao/>
-        </>
+        <DivControleDePacientes>
+            <SideBarPacientes/>
+            <FormularioDeEvolucao/>
+        </DivControleDePacientes>
     )
 }
 

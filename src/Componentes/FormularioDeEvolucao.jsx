@@ -1,5 +1,8 @@
-import { TextField } from "@mui/material"
+import { Button, TextField } from "@mui/material"
 import { useState } from "react"
+import DivButtonFormulario from "../Styled-Components/DivButtonFormulario"
+import FormSinaisVitais from "../Styled-Components/FormSinaisVitais"
+import TextFieldSinaisVitais from "../Styled-Components/TextFieldSinaisVitais"
 
 const FormularioDeEvolucao = () => {
     const [form, setForm] = useState({
@@ -43,45 +46,51 @@ const FormularioDeEvolucao = () => {
         }
     }
     return(
-        <form>
-            <TextField 
+        <FormSinaisVitais>
+            <TextFieldSinaisVitais
             placeholder="Sistolica"
             name="sistolica"
             value={form.sistolica}
             onChange={handleChange}
             />
-            <TextField 
+            <TextFieldSinaisVitais 
             placeholder="Diastolica"
             name="diastolica" 
             value={form.diastolica}
             onChange={handleChange}
             />
-            <TextField 
+            <TextFieldSinaisVitais 
             placeholder="Pulso"
             name="pulso"
             value={form.pulso}
             onChange={handleChange}
             />
             
-            <TextField 
+            <TextFieldSinaisVitais 
             placeholder="Saturacao"
             name="saturacao" 
             value={form.saturacao}
             onChange={handleChange}
             />
-            <TextField 
+            <TextFieldSinaisVitais 
             placeholder="Temperatura"
             name="temperatura"
             value={form.temperatura}
             onChange={handleChange}
             />
-            <TextField 
+            <TextFieldSinaisVitais 
             placeholder="Evolua aqui"
             name="evolucao"
+            multiline={true}
+            minRows={10}
+            fullWidth
             value={form.evolucao}
             onChange={handleChange}
             />
-        </form>
+            <DivButtonFormulario>
+                <Button type='submit' variant={"contained"}>Enviar</Button>
+            </DivButtonFormulario>
+        </FormSinaisVitais>
 
     )
 }
