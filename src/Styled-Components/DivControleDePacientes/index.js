@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export default styled.div`
-display: flex;
-align-items: flex-start;
-`
+  display: flex;
+  align-items: flex-start;
+`;
