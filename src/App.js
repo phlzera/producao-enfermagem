@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ControleEvolucoes from "./Paginas/ControleEvolucoes";
+import ControlePacientes from "./Paginas/ControlePacientes";
 import Dashboard from "./Paginas/Dashboard";
 import TelaLogin from "./Paginas/TelaLogin";
 import GlobalStyle from "./Styled-Components/GlobalStyle";
@@ -12,7 +13,7 @@ function App() {
         <Route path="/login" element={<TelaLogin />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/evolucoes" element={<ControleEvolucoes />} />
-        <Route path="/pacientes" element={<></>} />
+        <Route path="/pacientes" element={<ControlePacientes/>} />
       </Routes>
     </BrowserRouter>
   );
