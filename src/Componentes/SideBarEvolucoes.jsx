@@ -1,11 +1,13 @@
 import ListaDePacientes from "./ListaDePacientes";
 import SideBarDiv from "../Styled-Components/SideBarDiv";
-import ControlesPaciente from "./ControlesPaciente";
+import ControlesEvolucoes from "./ControlesEvolucoes";
+
 const SideBarPacientes = () => {
+
   return (
     <SideBarDiv>
       <ListaDePacientes />
-      <ControlesPaciente />
+      <ControlesEvolucoes />
     </SideBarDiv>
   );
 };
