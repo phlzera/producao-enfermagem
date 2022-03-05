@@ -2,14 +2,15 @@ import { MenuItem, Select } from "@mui/material";
 import styled from 'styled-components'
 
 const FlexBox = styled.div`
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
   background-color:rgba(136, 150, 150, 0.5);
   border-radius: 15px;
   width: 10%;
+  height: 100%;
   margin: 0px 5px 0px 0px;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
+
 `;
 
 const SideBarPacientes = () => {
