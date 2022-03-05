@@ -1,4 +1,4 @@
-import FormularioLogin from "../Componentes/FormularioLogin";
+import FormularioLogin from "../Componentes/Login/FormularioLogin";
 
 const TelaLogin = () => {
   return <FormularioLogin />;

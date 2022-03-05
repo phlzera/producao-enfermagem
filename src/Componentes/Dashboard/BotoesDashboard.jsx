@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import CardDashBoard from "../Styled-Components/CardDashBoard";
-import DashBoardIcons from "../Styled-Components/DashBoardIcons";
-const iconePacientes = require("../icons/medical-history.png");
+import CardDashBoard from "../../Styled-Components/CardDashBoard";
+import DashBoardIcons from "../../Styled-Components/DashBoardIcons";
+const iconePacientes = require("../../icons/medical-history.png");
 
 const BotoesDashboard = () => {
   return (

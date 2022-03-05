@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import LoginForm from "../Styled-Components/LoginForm";
-import LoginTextField from "../Styled-Components/LoginTextField";
+import LoginForm from "../../Styled-Components/LoginForm";
+import LoginTextField from "../../Styled-Components/LoginTextField";
 const FormularioLogin = () => {
   let navigate = useNavigate();
   const [form, setForm] = useState({ usuario: "", senha: "" });

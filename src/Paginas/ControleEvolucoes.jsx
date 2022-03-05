@@ -1,6 +1,6 @@
-import FormularioDeEvolucao from "../Componentes/FormularioDeEvolucao";
-import SideBarEvolucoes from "../Componentes/SideBarEvolucoes";
-import EvolucoesBox from "../Componentes/EvolucoesBox";
+import FormularioDeEvolucao from "../Componentes/ControleEvolucoes/FormularioDeEvolucao";
+import SideBarEvolucoes from "../Componentes/ControleEvolucoes/SideBarEvolucoes";
+import EvolucoesBox from "../Componentes/ControleEvolucoes/EvolucoesBox";
 import { switcherContext } from "../Context/switcherContext";
 import { useState } from "react";
 import DivControleDeEvolucoes from "../Styled-Components/DivControleDeEvolucoes";

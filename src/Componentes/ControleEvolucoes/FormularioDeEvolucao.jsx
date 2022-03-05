@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { useState } from "react";
-import DivButtonFormulario from "../Styled-Components/DivButtonFormulario";
-import FormSinaisVitais from "../Styled-Components/FormSinaisVitais";
-import TextFieldSinaisVitais from "../Styled-Components/TextFieldSinaisVitais";
+import DivButtonFormulario from "../../Styled-Components/DivButtonFormulario";
+import FormSinaisVitais from "../../Styled-Components/FormSinaisVitais";
+import TextFieldSinaisVitais from "../../Styled-Components/TextFieldSinaisVitais";
 
 const FormularioDeEvolucao = () => {
   const [form, setForm] = useState({

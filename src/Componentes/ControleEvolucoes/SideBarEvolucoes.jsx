@@ -1,8 +1,8 @@
 import ListaDePacientes from "./ListaDePacientes";
-import SideBarDiv from "../Styled-Components/SideBarDiv";
+import SideBarDiv from "../../Styled-Components/SideBarDiv";
 import ControlesEvolucoes from "./ControlesEvolucoes";
 
-const SideBarPacientes = () => {
+const SideBarEvolucoes = () => {
 
   return (
     <SideBarDiv>
@@ -12,4 +12,4 @@ const SideBarPacientes = () => {
   );
 };
 
-export default SideBarPacientes;
+export default SideBarEvolucoes;

@@ -1,5 +1,5 @@
 import React from "react";
-import BotoesDashboard from "../Componentes/BotoesDashboard";
+import BotoesDashboard from "../Componentes/Dashboard/BotoesDashboard";
 import DivDashboard from "../Styled-Components/DivDashboard";
 const Dashboard = () => {
   return (

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { switcherContext } from "../Context/switcherContext";
-import ButtonControleEvolucoes from "../Styled-Components/ButtonControleEvolucoes";
+import { switcherContext } from "../../Context/switcherContext";
+import ButtonControleEvolucoes from "../../Styled-Components/ButtonControleEvolucoes";
 
 const ControlesEvolucoes = () => {
   const switcherContxt = useContext(switcherContext)

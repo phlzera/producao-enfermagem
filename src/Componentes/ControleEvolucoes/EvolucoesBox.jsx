@@ -7,7 +7,7 @@ import {
   TableRow,
 } from "@mui/material";
 import { useContext } from "react";
-import {switcherContext} from '../Context/switcherContext'
+import {switcherContext} from '../../Context/switcherContext'
 
 const EvolucoesBox = () => {
   const switcherContxt = useContext(switcherContext);
