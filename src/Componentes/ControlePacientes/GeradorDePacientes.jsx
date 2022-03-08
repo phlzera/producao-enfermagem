@@ -1,5 +1,4 @@
 import {Button, TextField } from "@mui/material";
-import styledEngine from "@mui/styled-engine";
 import styled from "styled-components";
 
 const Form = styled.form`
@@ -12,9 +11,13 @@ const Form = styled.form`
     width: 40%;
 `
 
-const StyledTextField = styledEngine(TextField)`
-    margin: 0px 5px 8px 0px;
-`
+
+
+const StyledTextField = props => (
+    <TextField label={props.label} style={{margin: "0px 5px 8px 0px"}} color={'primary'}>
+        {props.children}
+    </TextField>
+)
 
 const SubTitle = styled.h2`
     width: 100%;

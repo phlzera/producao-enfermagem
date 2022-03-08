@@ -16,7 +16,7 @@ const SideBarFuncionarios = () => {
   return (
     <>
       <FlexBox>
-        <Select name="ListaDeFuncionarios" defaultValue={10}>
+        <Select name="ListaDeFuncionarios" defaultValue={0}>
           <MenuItem value={0}>Novo Funcionario...</MenuItem>
           <MenuItem value={10}>Leonardo</MenuItem>
           <MenuItem value={20}>Joao</MenuItem>

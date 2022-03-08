@@ -17,7 +17,7 @@ const SideBarPacientes = () => {
   return (
     <>
       <FlexBox>
-        <Select name="ListaDePacientes" defaultValue={10}>
+        <Select name="ListaDePacientes" defaultValue={0}>
           <MenuItem value={0}>Novo Paciente...</MenuItem>
           <MenuItem value={10}>Roberto</MenuItem>
           <MenuItem value={20}>Oliveira</MenuItem>

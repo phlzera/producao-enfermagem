@@ -4,10 +4,10 @@ export default styled.div`
   font-family: nunito;
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 96%;
+  height: 150px;
   padding: 5px;
   border: solid 1px lightcyan;
-  margin: 0px 5px 0px 20px;
   border-radius: 20px;
   background-color: #0b2a3d;
 `;

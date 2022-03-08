@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import CardDashBoard from "../../Styled-Components/CardDashBoard";
 import DashBoardIcons from "../../Styled-Components/DashBoardIcons";
 const iconeEvolucoes = require("../../icons/medical-history.png");
 const iconePacientes = require("../../icons/paciente.png")
 const iconeFuncionarios = require("../../icons/funcionarios.png")
+
+const DivMae = styled.div`
+  display: flex;
+  width: 80%
+`
+
 const BotoesDashboard = () => {
   return (
-    <>
+    <DivMae>
       <Link to={"/evolucoes"} style={{ textDecoration: "none" }}>
         <CardDashBoard>
           <DashBoardIcons src={iconeEvolucoes} alt="Prancheta" />
@@ -25,7 +32,7 @@ const BotoesDashboard = () => {
           <h2>Controle de Funcionarios</h2>
         </CardDashBoard>
       </Link>
-    </>
+    </DivMae>
   );
 };
 
