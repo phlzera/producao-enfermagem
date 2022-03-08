@@ -7,14 +7,14 @@ foi feito e futuramente irei trabalhar no Design & UX, no momento foquei somente
 
 
 ## Tarefas:
-  -✅Layout do front-end
-  -✅Banco de dados MYSQL;
-  -✅Modelos/Entidades e controladores no Sequelize
-  -✅API Rest Nodejs com Sequelize e Express ( Em desenvolvimento );
-  -❎Associations sequelize
-  -❎Design & UX do front-end
-  -❎Sistema de login utilizando Tokens jwt;
-  -❎Utilizar axios para Integrar o front com back-end
+  -✅Layout do front-end  
+  -✅Banco de dados MYSQL;  
+  -✅Modelos/Entidades e controladores no Sequelize  
+  -✅API Rest Nodejs com Sequelize e Express ( Em desenvolvimento );  
+  -❎Associations sequelize  
+  -❎Design & UX do front-end  
+  -❎Sistema de login utilizando Tokens jwt;  
+  -❎Utilizar axios para Integrar o front com back-end  
   
  ------------------------------
   -✅ Concluido
