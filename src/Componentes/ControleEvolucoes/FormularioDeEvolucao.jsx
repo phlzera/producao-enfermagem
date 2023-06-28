@@ -13,7 +13,7 @@ const FormularioDeEvolucao = () => {
     temperatura: "",
     evolucao: "",
   });
-
+  
   function handleChange(event) {
     const { name, value } = event.target;
     switch (name) {
@@ -90,7 +90,7 @@ const FormularioDeEvolucao = () => {
         onChange={handleChange}
       />
       <DivButtonFormulario>
-        <Button type="submit" variant={"contained"}>
+        <Button type="submit" variant={"contained"} onSubmit={handleSubmit}>
           Enviar
         </Button>
       </DivButtonFormulario>
