@@ -38,7 +38,7 @@ const EvolucoesBox = () => {
               db.evolucoes.map( evolucao => {
                 if(evolucao.idPaciente === selectedPatient) {
                   return(
-                    <TableRow>
+                    <TableRow key={evolucao.ID}>
                       <TableCell key={evolucao.id}>
                         {
                           db.funcionarios.map( funcionario => {
