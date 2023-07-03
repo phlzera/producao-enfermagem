@@ -10,7 +10,6 @@ const FormularioLogin = () => {
   function handleSubmit(event) {
     event.preventDefault();
     if (form.usuario === "admin" && form.senha === "admin") {
-      console.log("true");
       return navigate("/dashboard");
     }
   }

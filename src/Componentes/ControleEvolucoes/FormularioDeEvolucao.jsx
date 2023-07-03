@@ -13,7 +13,11 @@ const FormularioDeEvolucao = () => {
     temperatura: "",
     evolucao: "",
   });
-  
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
   function handleChange(event) {
     const { name, value } = event.target;
     switch (name) {
@@ -48,7 +52,7 @@ const FormularioDeEvolucao = () => {
     }
   }
   return (
-    <FormSinaisVitais>
+    <FormSinaisVitais onSubmit={handleSubmit}>
       <TextFieldSinaisVitais
         placeholder="Sistolica"
         name="sistolica"
@@ -90,7 +94,7 @@ const FormularioDeEvolucao = () => {
         onChange={handleChange}
       />
       <DivButtonFormulario>
-        <Button type="submit" variant={"contained"} onSubmit={handleSubmit}>
+        <Button type="submit" variant={"contained"}>
           Enviar
         </Button>
       </DivButtonFormulario>
