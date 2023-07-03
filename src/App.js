@@ -16,7 +16,6 @@ function App() {
         <Route path="/evolucoes" element={<ControleEvolucoes />} />
         <Route path="/pacientes" element={<ControlePacientes/>} />
         <Route path="/funcionarios" element={<ControleFuncionarios/>} />
-
       </Routes>
     </BrowserRouter>
   );

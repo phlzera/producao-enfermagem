@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const switcherContext = createContext({switcher: null,  setSwitcher: null})
+export const switcherContext = createContext({switcherEvolucoes: null,  setSwitcherEvolucoes: null})

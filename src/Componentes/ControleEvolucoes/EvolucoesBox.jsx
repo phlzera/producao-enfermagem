@@ -8,10 +8,13 @@ import {
 } from "@mui/material";
 import { useContext } from "react";
 import {switcherContext} from '../../Context/switcherContext'
-
+import db from "../../db/db"
+import { selectedPatientContext } from "../../Context/selectedPatientContext";
 const EvolucoesBox = () => {
   const switcherContxt = useContext(switcherContext);
   const {switcher} = switcherContxt;
+  const selectedPatientContxt = useContext(selectedPatientContext)
+  const {selectedPatient} = selectedPatientContxt
 
   return (
         <TableContainer
@@ -31,38 +34,30 @@ const EvolucoesBox = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Pablo</TableCell>
-              <TableCell>19/2/22</TableCell>
-            </TableRow>
+            {
+              db.evolucoes.map( evolucao => {
+                if(evolucao.idPaciente === selectedPatient) {
+                  return(
+                    <TableRow>
+                      <TableCell key={evolucao.id}>
+                        {
+                          db.funcionarios.map( funcionario => {
+                            let nome = ""
+                            if(funcionario.id === evolucao.idAutor) {
+                              nome = funcionario.nome;
+                            }
+                            return nome;
+                          })
+                        }
+                      </TableCell>
+                      <TableCell>
+                        {evolucao.data}
+                      </TableCell>
+                    </TableRow>
+                  )
+                }
+              })
+            } 
           </TableBody>
         </Table>
       </TableContainer>
