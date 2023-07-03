@@ -1,3 +1,3 @@
 import { createContext } from "react";
-
-export const selectedPatientContext = createContext({selectedPatient: null,  setSelectedPatient: null})
+import db from "../db/db";
+export const selectedPatientContext = createContext({selectedPatient: db.pacientes[0].id,  setSelectedPatient: null})
